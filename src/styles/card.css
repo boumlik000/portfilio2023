@@ -1,0 +1,206 @@
+.swiper-slider-projects{
+    width: 13rem !important;
+}
+.slide-card-project img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 0px 10px 1px var(--gris);
+    border-radius: 2%;
+}
+.dark-mode .slide-card-project img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: var(--shadow);
+    border-radius: 2%;
+}
+
+.slider-controler_projects{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 100%;
+    border-radius: 2%;
+
+}
+.carouseel_projects{
+    /* border: 1px solid #eee; */
+    border-radius: 8px;
+    box-shadow: 0 0 15px 2px #b0acacbd,
+    inset 0 0 30px 2px #b0acac;
+    background-color:  #151d2a;
+    background-color:  #fff8f8;
+    background-image: url("../img/body.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.dark-mode .carouseel_projects{
+    /* border: 1px solid #eee; */
+    border-radius: 8px;
+    box-shadow: 0 0 15px 2px #0b0000e3,
+    inset 0 0 30px 2px #0b0000e3;
+    background-color:  #151d2a;
+    background-image: url("../img/body.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    background-image: linear-gradient(to bottom, #00000087 , #ffffff10) !important;
+    opacity:.5;
+    top: 0px !important;
+    height: 100% !important;
+}
+.dark-mode .swiper-slide-shadow-left,
+.dark-mode .swiper-slide-shadow-right {
+    background-image: linear-gradient(to bottom, #283750ae , #000000a7) !important;
+    opacity:.5;
+    top: 1px !important;
+    height: 100% !important;
+}
+/* //card */
+.dark-mode .card-projects{
+    background-color: var(--dbg);
+    box-shadow:var(--shadow);
+}
+.dark-mode .card_description{
+    color: #fff;
+}
+.dark-mode .card_description p{
+    color: #e6e6e6;
+}
+.card-projects{
+    padding: 30px 0;
+    background-color: #fff ;
+    height: auto !important;
+    justify-content: center;
+    box-shadow: 0 0 10px 1px #00000036;
+    border-radius: 20px;
+}
+.card_description{
+    position: relative;
+}
+.card_description h2{
+    font-family: var(--card);
+    font-weight: 600;
+    position: relative;
+    line-height: 32px;
+}
+.card_description h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 5px;
+    background-color: var(--blue);
+  }
+.dark-mode  .card_description h2::after {
+    background-color: var(--white-blue);
+}
+.card_description p{
+    font-family: var(--small);
+    padding: 5px;
+    line-height: 32px;
+    font-size: 21px;
+    color: #9e9e9e;
+    font-weight: 400;
+}
+.icons_projects{
+    right: 20px;
+    bottom:20px;
+    position: absolute;
+}
+.icons_projects span a{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: var(--blue);
+}
+.dark-mode .icons_projects span a{
+    color: var(--white-blue);
+}
+.tags_projects{
+    bottom:20px;
+    position: absolute;
+}
+.tags_projects .tag{
+    padding: 10px 20px;
+    /* border: 1px solid var(--gris); */
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--small);
+    margin: 0 10px;
+    box-shadow: 0 0 5px 0px var(--blue);
+}
+.dark-mode .tags_projects .tag{
+    box-shadow: 0 0 5px 0px var(--white-blue);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:990px) {
+    .swiper-slider-projects{
+        width: 15rem !important;
+    }
+    .slide-card-project .img_carousel_project{
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        box-shadow: 0 0px 10px 1px var(--gris);
+        border-radius: 2%;
+    }
+    .slide-card-project {
+        height: 24rem !important;
+        object-fit: cover;
+        object-position: top;
+        box-shadow: 0 0px 15px 2px var(--gris);
+        border-radius: 2%;
+    }
+
+    .tags{
+        margin-top: 50px;
+    }
+}
+@media (max-width:768px) {
+    .tags{
+        margin-top: 50px;
+       
+    }
+    .tags_projects,.icons_projects{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tags_projects .tag{
+        margin-top: 10px !important;
+    }
+    .icons_projects{
+        margin: 0;
+        margin-top: 20px;
+        right: 0;
+    }
+}
+@media (max-width:575px) {
+    .card-projects{
+        margin: 10px !important;
+     }
+     .p-4{
+        padding: 0rem !important;
+     }
+}

@@ -1,0 +1,21 @@
+.btn_gris{
+    background-color: transparent !important;
+    padding: 4px 12px !important;
+    font-family: var(--small ) !important;
+    font-size: 20px !important; 
+    transition: .4s all ease !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.btn_gris:hover{
+    font-weight: bolder;
+    scale: 1.05;
+}
+.dark-mode .btn_gris{
+    color: #fff;
+    border-bottom-color:#fff !important;
+    transition: .4s all ease !important;
+}
+.dark-mode .btn_gris:hover{
+    color: #fff !important;
+}

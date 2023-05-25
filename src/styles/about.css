@@ -1,0 +1,161 @@
+.paragraph_about{
+    font-family: var(--small);
+    font-weight: 400;
+    color: #2c2c2c;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 10px;
+}
+.dark-mode .paragraph_about{
+    color: #ffffff;
+}
+.paragraph_about span{
+    display: block;
+    font-weight: bold;
+    margin: 0;
+}
+.paragraph_about span i{
+    font-style: normal;
+    font-family: var(--big) ;
+    color: var(--blue);
+    font-weight: bold;
+    
+}
+.dark-mode .paragraph_about span i{
+    color: var(--white-blue);
+}
+.experience1 p{
+    line-height: 30px;
+    
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dark-mode .experience .number{
+    color: var(--white-blue);
+    text-shadow: 0 1px 0 #ededed,
+                 0 2px 0 #f9f9f9,
+                 0 3px 0 #ffffff,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+.experience .number{
+    font-size: 12rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 5px;
+    font-family: var(--card);
+    text-shadow: 0 1px 0 #ededed,
+                 0 2px 0 #f9f9f9,
+                 0 3px 0 #ffffff,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+.experience p .span0{
+    font-family: var(--small);
+    font-size: 2rem; 
+    font-weight: 700;
+    color: #5c5c5c;
+    display: inline;
+}
+
+.experience p .span1{
+    display: inline;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: var(--small);
+    margin-left: 5px;
+}
+.dark-mode .experience p .span0{
+    color: #cbcbcb;
+}
+.dark-mode .experience p .span1{
+    color: #fff;
+}
+.dark-mode .statistics span{
+    color: #e6e6e6;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.dark-mode .statistics h5{
+    color: #f9f9f9;
+}
+.dark-mode .email a{
+    color: #f9f9f9 ;
+}
+.statistics span{
+    color: #868686ee;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.statistics h5{
+    color: #2c2c2c;
+    font-weight: 600;
+    font-family: var(--small);
+    font-size: 1.5rem;
+}
+.email a{
+    color: #2c2c2c ;
+}
+.email a:hover{
+    color: var(--blue);
+}
+@media (max-width:1200px) {
+    .section_about{
+        height: 100vh;
+    }
+    .about-height{
+        height: 100%;
+    }
+    .paragraph_about{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:768px) {
+    .paragraph_about{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .paragraph_about span i{
+        font-family: var(--big) ;
+        color: var(--blue);
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .statistics span{
+        color: #868686ee;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .statistics h5{
+        color: #2c2c2c;
+        font-weight: 600;
+        font-family: var(--small);
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:550px) {
+    .experience1 p{
+        line-height: 30px;
+        padding: 0 !important;
+    }
+}

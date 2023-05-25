@@ -1,0 +1,57 @@
+.progress_bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #eee ;
+    border-radius: 10px;
+  }
+.dark-mode .progress_bar{
+  background-color: #151d2a ;
+}
+  .progress-bar-inner {
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right ,var(--blue),var(--white-blue));
+    animation: progress-bar 5s ease-in-out ;
+    
+
+  }
+  .dark-mode .progressbar_div h3,
+  .dark-mode .progressbar_div .counts{
+    color: #fff;
+  }
+  .progressbar_div h3{
+    font-family: var(--card);
+    font-weight: 600;
+    font-size: 16px ;
+    line-height: 42px;
+
+  }
+  .progressbar_div .counts{
+    font-size: 16px;
+    justify-content: center;
+    font-weight: bold;
+    
+  }
+ 
+ 
+  @keyframes progress-bar {
+    from {
+      width: 0;
+      box-shadow: inset 0px 0px 34px 0px rgba(0, 0, 0, 0.073);
+    }
+    to {
+        
+        box-shadow: inset 0px 0px 54px 0px rgba(0, 0, 0, 0.073);
+      }
+
+  }
+  @media (max-width:768px) {
+    .progressbar_div h3{
+      font-size: 12px;
+    }
+  }
+  @media (max-width:550px) {
+    .progressbar_div h3{
+      font-size: 15px;
+    }
+  }

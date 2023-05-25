@@ -1,0 +1,41 @@
+form{
+  position: relative;
+  height: 40rem;
+  justify-content: center;
+}
+  
+  
+  form input,
+  form textarea {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid var(--white-blue);
+    border-radius: 2px;
+    font-size: 21px;
+    resize: none;
+    font-family: var(--small);
+    outline: none;
+  }
+  .dark-mode form input,
+  .dark-mode form textarea{
+    background-color: var(--dbg);
+    color: #fff;
+  }
+  .dark-mode ::placeholder{
+    color: #fdfdfdd8;
+  }
+  form textarea{
+    height: 200px;
+  }
+  
+  .alert{
+    width: 100%;
+    max-width: 600px;
+    font-family: var(--small);
+  }
+ form .btn_blue{
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 25%;
+  }

@@ -1,0 +1,21 @@
+.btn_blue{
+    
+    transition: .1s all ease-in-out !important;
+    padding: 8px 16px !important;
+    font-family: var(--small ) !important;
+    font-size: 20px !important; 
+    width: auto;
+    font-weight: 600 !important;
+    /* box-shadow: 0 0 5px 0 #0000008e; */
+    border: 1px solid #000 !important;
+}
+.btn_blue:hover{
+    color: #fff !important;
+    font-weight: bold;
+    animation: var(--animation) !important;
+    border: 1px solid var(--blue) !important ;
+}
+.dark-mode .btn_blue{
+    border: 1px solid #fff !important;
+    color: #fff;
+}

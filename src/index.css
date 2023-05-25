@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'BlackOpsOne-Regular';
+  src: url('./fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('./fonts/Yrsa-VariableFont_wght.ttf') format('truetype-variations');
+}
+@font-face {
+  font-family: 'Martel-Black';
+  src: url('./fonts/Martel-Black.ttf') format('truetype-variations');
+}
+:root {
+  --blue: #1f93ff;
+  --gris: #c3c3c3;
+  --white-blue: #91dbfb;
+  --white-gris: #fff8f8;
+  --move: #531fff;
+  --dbg:#283750;
+  --shadow: 0 0 5px 0px #63e0ffec;
+  --dark-for-blue:#63e0ffec;
+  
+  --big:'BlackOpsOne-Regular', cursive;
+  --small:'Yrsa', sans-serif;
+  --card: 'Martel-Black', serif;
+
+  --animation:wave 8s ease-in-out infinite !important;
+}
+@keyframes wave {
+  0% {
+    background-color: var(--blue);
+    
+  }
+  30% {
+    background-color: #38acff;
+    
+  }
+  70% {
+    background-color: #4a9be6;
+    
+  }
+  100% {
+    background-color: var(--blue);
+    
+  }
+}
+
+body {
+  font-family: 'Yrsa', sans-serif;
+}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+h1 {
+  font-family: 'BlackOpsOne-Regular', cursive;
+}

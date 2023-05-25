@@ -1,0 +1,158 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+
+
+
+nav {
+	position: fixed;
+	top: 5%;
+	left: 0;
+	background: transparent;
+	z-index:1000 ;
+}
+
+nav ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	
+}
+
+nav ul li {
+	position: relative;
+	width: 70px;
+	cursor: pointer;
+	background: var(--blue);
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	margin: 5px auto;
+	animation:var(--animation) !important;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 15px;
+	opacity: .8;
+}
+
+nav ul li:after {
+	position: absolute;
+	color: var(--blue);
+	top:0;
+	left: 70px;
+	width: 120px; height: 100%;
+	opacity:0;
+	transform: perspective(400px) rotateY(190deg);
+	transform-origin: 0 0%;
+	transition:all .4s ease-out;
+	box-shadow: 0 0 5px 1px #00000059;
+	font-family: var(--small);
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white-gris);
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+nav ul  li:nth-child(1):after { 
+	content: "Home";
+	line-height: 60px;
+}
+nav ul  li:nth-child(2):after { 
+	content: "About";
+	line-height: 60px;
+}
+nav ul  li:nth-child(3):after { 
+  content: "skills";
+	line-height: 60px;
+}
+nav ul  li:nth-child(4):after { 
+  content: "Projects";
+	line-height: 60px;
+}
+nav ul  li:nth-child(5):after { 
+  content: "Comments";
+	line-height: 60px;
+}
+nav ul  li:nth-child(6):after { 
+  content: "Contact";
+	line-height: 60px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+	opacity: 1;
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	/* display: inline-block; */
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+
+.icon{
+  color:#fff !important;
+  
+}
+
+@media (max-width:1100px) {
+	nav ul li{
+		width: 50px;
+		font-size: 20px;
+	}
+	nav ul li:after{
+		width: 90px;
+		font-size: 15px;
+		z-index: 1;
+	}
+}
+@media (max-width:768px) {
+	nav ul li{
+		width: 80px;
+		font-size: 20px;
+	}
+	nav ul li:after{
+		width: 110px;
+		font-size: 15px;
+		z-index: 1;
+	}
+}
+@media (max-width:580px) {
+	nav ul li{
+		width: 50px;
+		font-size: 20px;
+	}
+	nav ul li:after{
+		width: 110px;
+		font-size: 15px;
+		z-index: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+.paragraph h3{
+    font-family: var(--card);
+    font-size: 3rem;
+}
+
+
+.typing-text {
+    display: inline-block;
+    vertical-align: middle;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 4rem;
+  }
+  .dark-mode .typing-text{
+    color: #fff !important;
+  }
+  .changing-words{
+    font-size: 4rem;
+  }
+  .dark-mode .changing-words{
+    color: #fff;
+  }
+  .dark-mode .paragraph h3{
+    font-family: var(--card);
+    color: #fff;
+    font-size: 3rem;
+}
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@media (max-width:1200px) {
+  .paragraph h1{
+    font-size: 28px;
+}
+  .paragraph h3{
+    font-family: var(--card);
+    font-size: 1.5rem;
+  }
+  .dark-mode .paragraph h3{
+    font-family: var(--card);
+    font-size: 1.5rem;
+  }
+}
+ 
